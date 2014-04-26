@@ -1,4 +1,3 @@
-ghost-aside
-===========
+# Aside
 
-A simplistic ghost theme based on Casper, but with a fixed sidebar
+A theme for [Ghost](http://github.com/tryghost/ghost/) based on the default theme, Casper.
