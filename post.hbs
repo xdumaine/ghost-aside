@@ -4,11 +4,11 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 <main class="content" role="main">
-	
+
     <article class="{{post_class}}">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
-        
+
 
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
@@ -17,24 +17,6 @@
         <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
 
         <h1 class="post-title">{{{title}}}</h1>
-		<script type="text/javascript">
-			function selectText(containerid) {
-				if (document.selection) {
-					var range = document.body.createTextRange();
-					range.moveToElementText(document.getElementById(containerid));
-					range.select();
-				} else if (window.getSelection) {
-					var range = document.createRange();
-					range.selectNode(document.getElementById(containerid));
-					window.getSelection().addRange(range);
-				}
-			}
-			function jetztIt() {
-				selectText('jetzt-container');
-				(function() {var addStyle = function(url) {var style = document.createElement('link');style.rel = 'stylesheet';style.type = 'text/css';style.href = url;document.head.appendChild(style);};var addScript = function(url,cb) {var script = document.createElement('script');script.src = url;if(cb) {script.onload = cb;}document.body.appendChild(script);};if (typeof window.jetzt === 'undefined') {var cb = function() {window.jetzt.select();};addStyle('https://ds300.github.io/jetzt/jetzt.css');addScript('https://ds300.github.io/jetzt/jetzt-solid.min.js',cb);} else {window.jetzt.select();}})();
-			}
-		</script>
-		<a href="#" onclick="jetztIt();">Speed read this</a> <a href="https://ds300.github.io/jetzt/#use" target="_blank">with jetzt</a>.
 
         <section class="post-content" id="jetzt-container">
             {{content}}
