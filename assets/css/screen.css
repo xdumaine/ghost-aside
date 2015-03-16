@@ -54,7 +54,7 @@
     text-decoration: none;
 }
 
-/* Each icon is created by inserting the corret character into the 
+/* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-ghost:before {
     content: "\e000";
@@ -276,8 +276,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 
@@ -369,7 +369,7 @@ table.plain {
     background: #303538 no-repeat center center;
     background-size: cover;
 	top: 0;
-	
+
 }
 
 main.content {
@@ -407,6 +407,10 @@ main.content {
     line-height: 1.5em;
     font-weight: 300;
     letter-spacing: 0;
+}
+
+.blog-nav-item {
+    margin: 0;
 }
 
 .header-link {
@@ -790,9 +794,9 @@ main.content {
     }
 
     #site-head {
-        -webkit-box-sizing: border-box; 
+        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; 
+        box-sizing: border-box;
         height: auto;
         min-height: 240px;
         padding: 15% 0;
@@ -800,7 +804,7 @@ main.content {
 		position: initial;
 		min-width: inherit;
     }
-	
+
 	main.content {
 		padding-left: 0;
 	}
@@ -858,7 +862,7 @@ main.content {
         max-height: 80px;
     }
 
-    .inner, 
+    .inner,
     .pagination {
         width: auto;
         margin-left: 16px;
