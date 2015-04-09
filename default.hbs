@@ -32,7 +32,20 @@
 </head>
 <body class="{{body_class}}">
 
-	<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+	<header id="site-head"
+        {{#is "post"}}
+            {{#if post.image}}
+                style="background-image: url({{post.image}})"
+            {{else}}
+                {{#if @blog.cover}}
+                    style="background-image: url({{@blog.cover}})"
+                {{/if}}
+            {{/if}}
+        {{else}}
+            {{#if @blog.cover}}
+                style="background-image: url({{@blog.cover}})"
+            {{/if}}
+        {{/is}}>
 		<div class="vertical">
 			<div id="site-head-content" class="inner">
 
