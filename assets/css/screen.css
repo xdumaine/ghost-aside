@@ -449,6 +449,29 @@ main.content {
     box-shadow: #fff 0 0 0 5px;
 }
 
+.post-thumbnail {
+    float: left;
+    height: 120px;
+    margin-top: 1.25rem;
+    width: 25%;
+    text-align: center;
+}
+
+.post-thumbnail:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.post-thumbnail img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
 .post-title {
     margin:0;
 }

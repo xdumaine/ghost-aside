@@ -16,8 +16,12 @@
 			| <a href="{{url}}#disqus_thread">Comments<a>
 			</span>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-
         </header>
+		{{#if image}}
+			<div class="post-thumbnail">
+	            <a href="{{url}}"><img src={{image}} /></a>
+	        </div>
+		{{/if}}
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
         </section>
