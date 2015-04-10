@@ -365,6 +365,7 @@ table.plain {
     height: 100%;
     margin-bottom: 0;
     text-align: center;
+    text-shadow: 0 0 10px #303538;
     color: #fff;
     background: #303538 no-repeat center center;
     background-size: cover;
