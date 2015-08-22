@@ -504,6 +504,17 @@ main.content {
     text-decoration: underline;
 }
 
+.footnotes {
+    background-color: #eee;
+    font-size: 1.8rem;
+    padding-left: 5px;
+}
+
+.footnotes::before {
+    content: "Footnotes";
+    font-weight: bold;
+}
+
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
