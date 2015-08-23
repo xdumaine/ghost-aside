@@ -25,10 +25,13 @@
         <footer class="post-footer">
 
             {{#if author}}
+                {{#author}}
                 <section class="author">
-                    <h4>{{author.name}}</h4>
-                    <p>{{author.bio}}</p>
+                    <img src="{{image}}" alt="{{name}}" />
+                    <h4>{{name}}</h4>
+                    <p>{{{bio}}}</p>
                 </section>
+                {{/author}}
             {{/if}}
 
             <section class="share">
