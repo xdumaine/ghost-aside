@@ -609,6 +609,16 @@ main.content {
     margin-right: 180px;
 }
 
+/* Author image in a circle */
+.post-footer .author img {
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    float: left;
+    height: 70px;
+    margin-right: 10px;
+    width: 70px
+}
+
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
    to be flexible at smaller screen sizes while the share
@@ -617,7 +627,7 @@ main.content {
     position: absolute;
     top: 4rem;
     right: 0;
-    width: 140px;
+    width: 155px;
 }
 
 .post-footer .share a {
